@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Excel File</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #2b6777, #c8d8e4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .upload-box {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .upload-box h2 {
+            color: #2b6777;
+            margin-bottom: 20px;
+        }
+
+        .upload-box input[type="file"] {
+            margin: 15px 0;
+            padding: 10px;
+        }
+
+        .upload-box button {
+            padding: 10px 20px;
+            background-color: #2b6777;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .upload-box button:hover {
+            background-color: #406f7c;
+        }
+    </style>
+</head>
+<body>
+    <div class="upload-box">
+        <h2>Upload Student List (Excel)</h2>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".xlsx, .xls"><br>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
